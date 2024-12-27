@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+ul{
+    display: flex;
+}
+
+header{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header .menu ul li a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+header .drop-down {
+    position: absolute;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+header .drop-down ol li a {
+    display: block;
+    color: gray;
+}
+
+header .menu ul li .drop-down {
+    opacity: 0.9;
+    visibility: visible;
+}
